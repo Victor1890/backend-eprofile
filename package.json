@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/Victor1890/backend-eprofile#readme",
   "devDependencies": {
+    "dotenv": "9.0.2",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
     "@babel/cli": "7.13.14",
     "@babel/core": "7.13.15",
     "@babel/node": "7.13.13",
@@ -32,10 +36,6 @@
     "@babel/preset-env": "7.13.15",
     "@babel/runtime": "^7.13.10",
     "@types/jsonwebtoken": "^8.5.1",
-    "dotenv": "9.0.2",
-    "nodemon": "^2.0.7"
-  },
-  "dependencies": {
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
     "express": "^4.17.1",
