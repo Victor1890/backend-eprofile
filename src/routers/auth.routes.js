@@ -2,7 +2,7 @@ import { Router } from "express";
 const router = Router();
 
 import * as userCtrl from "../controllers/auth.controller";
-import { verifySignUp, authJwt } from "../middlewares";
+import { verifySignUp } from "../middlewares";
 
 router.post(
   "/signup",
@@ -10,6 +10,6 @@ router.post(
   userCtrl.signUp,
 );
 
-router.post("/signin", [authJwt.verifyToken], userCtrl.signIn);
+router.post("/signin", /*[authJwt.verifyToken],*/ userCtrl.signIn);
 
 export default router;
