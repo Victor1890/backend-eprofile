@@ -10,6 +10,8 @@ router.post(
   userCtrl.signUp,
 );
 
-router.post("/signin", /*[authJwt.verifyToken],*/ userCtrl.signIn);
+router.post("/signin", userCtrl.signIn);
+
+router.get("/:id", userCtrl.getUserById);
 
 export default router;

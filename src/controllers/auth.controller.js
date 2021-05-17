@@ -39,3 +39,12 @@ export const signIn = async (req, res) => {
 
   res.json({ userFound, token });
 };
+
+export const getUserById = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id) return res.status(404).json({ message: "ID nt found" });
+  const getUserId = await User.findById(id);
+  if (!getUserId) return res.status(404).json({ message: "User not found" });
+  return res.status(200).json(getUserId);
+};
