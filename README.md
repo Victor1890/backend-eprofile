@@ -10,6 +10,7 @@ It is necessary to have software or settings already preset on your PC.
 * [Node and NPM](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)
 * [ExpressJs](https://expressjs.com/)
+* [JWT](https://jwt.io/)
 * [VS Code](https://code.visualstudio.com/)
 
 ### Clone project
